@@ -1,0 +1,16 @@
+body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+:root { --dropi-blue: #002B5B; --dropi-accent: #3b82f6; --dropi-success: #22c55e; }
+.bg-dropi { background-color: var(--dropi-blue); }
+.text-dropi { color: var(--dropi-blue); }
+.page { display: none; opacity: 0; transform: translateY(10px); transition: all 0.4s ease; }
+.page.active { display: block; opacity: 1; transform: translateY(0); }
+.glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+.card-hover { transition: all 0.3s ease; }
+.card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); }
+.sidebar-link { transition: all 0.2s; border-left: 4px solid transparent; }
+.sidebar-link.active { background: rgba(255,255,255,0.1); border-left-color: #fff; }
+input:focus, select:focus, textarea:focus { border-color: var(--dropi-accent) !important; box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1); }
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #002B5B; border-radius: 10px; }
